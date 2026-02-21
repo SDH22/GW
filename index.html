@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gilt Wilds</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo" data-link>GILT <span>WILDS</span></a>
+      <nav class="nav-main">
+        <a href="/shop/all" class="nav-link" data-link>Shop</a>
+        <div class="dropdown">
+          <span class="nav-link">Collections</span>
+          <div class="dropdown-content">
+            <a href="/collection/pride" data-link>Royal Indian</a>
+            <a href="/collection/savannah" data-link>Wilderness</a>
+            <a href="/collection/exotic" data-link>Artisan</a>
+            <a href="/collection/limited" data-link>Limited</a>
+          </div>
+        </div>
+        <a href="/about" class="nav-link" data-link>About</a>
+        <a href="/design-philosophy" class="nav-link" data-link>Philosophy</a>
+        <a href="/contact" class="nav-link" data-link>Contact</a>
+        <button class="cart-button" id="cart-button">
+          <span class="cart-icon">🛒</span>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="page-section"></main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
